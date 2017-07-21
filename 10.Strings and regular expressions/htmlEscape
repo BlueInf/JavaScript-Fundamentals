@@ -6,6 +6,7 @@ function htmlEscape(str){
         else if(ch=='>') result+='&gt;';
         else if(ch=='"') result+='&quot;';
         else if(ch=='\'') result+='&#39;';
+        else if(ch=='&')result+='&amp;';
         else result+=ch;
     }
     console.log(result);
