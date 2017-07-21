@@ -1,0 +1,6 @@
+function matchDates(text){
+    "use strict";
+    let pattern=/[0-9]{1,2}-\w{3}-[0-9]{4}/g;
+    console.log(text.match(pattern));
+}
+matchDates('13-Jun-1998 and were the best dates 07-Jul-1832');
