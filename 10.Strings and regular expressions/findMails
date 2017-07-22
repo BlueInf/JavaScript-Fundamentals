@@ -1,0 +1,8 @@
+function findEmails(input){
+    "use strict";
+    let text=input.join(' ');
+    let regex=/www.[a-z-\d]*[-.]*[a-z]*/g;
+    let result=text.match(regex);
+    console.log(result);
+}
+findEmails(['el - www.sentinel.-ko','www.dassda.com']);
